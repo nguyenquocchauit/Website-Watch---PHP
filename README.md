@@ -11,6 +11,8 @@ Bài tập thiết kế Website bán đồng hồ!
     Bootstrap 5.
     
     Ajax.
+  
+  Công cụ lập trình: Visual Studio Code.
     
   Mục tiêu đạt được hiện tại ở Website:
   
@@ -24,4 +26,9 @@ Bài tập thiết kế Website bán đồng hồ!
     
 Video demo cách sử dụng Website giao diện khách hàng:
 
+Tài khoản đăng nhập Website: 
+
+  Email: nguyenkhanhnam.hn@gmail.com
+  
+  Password: knam123
 
