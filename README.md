@@ -28,6 +28,10 @@ Video demo cách sử dụng Website giao diện khách hàng:
 
 https://drive.google.com/file/d/17-8EC2yzj1ASt70cIN4yxjGqC5bGhYgA/view?usp=sharing
 
+nếu lỗi thì dùng link này xem tạm
+
+https://drive.google.com/file/d/1b6sqfZJIXe4LWD39g2rU0Cl9wPMWKZ4e/view?usp=sharing
+
 Tài khoản đăng nhập Website:
 
     Email: nguyenkhanhnam.hn@gmail.com.
