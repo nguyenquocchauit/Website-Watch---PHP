@@ -1,0 +1,79 @@
+<?php
+require '../config/connectDB.php';
+
+$id = $_GET['id'];
+$brand = "SELECT ID_Brand , Name  FROM brands WHERE ID_Brand = '$id' ";
+$result = mysqli_query($conn, $brand);
+
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../thuvienweb/bootstrap-5.2.0-beta1-dist/bootstrap-5.2.0-beta1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css and javascript/style.css">
+    <script src="../thuvienweb/bootstrap-5.2.0-beta1-dist/bootstrap-5.2.0-beta1-dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../thuvienweb/fontawesome-free-5.15.4-web/fontawesome-free-5.15.4-web/css/all.min.css">
+    <link rel="stylesheet" href="../thuvienweb/fontawesome-free-6.1.2-web/css/all.min.css">
+    <script src="../thuvienweb/fontawesome-free-6.1.2-web/js/all.min.js"></script>
+    <script src="../thuvienweb/fontawesome-free-5.15.4-web/fontawesome-free-5.15.4-web/js/all.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../css and javascript/edit_delete_brand.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <title>TC WATCH - Danh sách nhãn hàng</title>
+</head>
+
+<body>
+    <?php
+    // thêm file navbar menu
+    include "../header_footer/header.php";
+    ?>
+    <div class="listbrand mt-5 mb-5">
+        <div class="container">
+            <table>
+                <tr>
+                    <td colspan="4">
+                        <h4>Xóa sửa nhãn hàng</h4>
+                    </td>
+                </tr>
+                <?php while ($row = mysqli_fetch_array($result)) :   ?>
+                    <?php
+                    $idbrand = $row['ID_Brand'];
+                    $namebrand = $row['Name'];
+                    echo "
+                    <tr>
+                        <td><p>Mã nhãn hàng :</p></td>
+                        <td><input type='text' name='idbrand' value='$idbrand' readonly class='form-control' id='idbrand' required></td>
+                        <td><p>Tên nhãn hàng :</p></td>
+                        <td><input type='text' name='namebrand' value='$namebrand' class='form-control' id='namebrand' required></td>
+                    </tr>";
+                    ?>
+                <?php endwhile; ?>
+                <tr>
+                    <td colspan="4">
+                        <button type="submit" name="edit" class="btn btn-success" id="edit">Sửa <i class="fa-solid fa-plus"></i></button>
+                        <button type="submit" name="delete" class="btn btn-success" id="delete">Xóa<i class="fa-solid fa-trash-can"></i></button>
+                        <button type="submit" class="btn btn-primary "> <a href="listbrand.php">Quay lại <i class="fa-solid fa-circle-chevron-left"></i></a></button>
+                    </td>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+    <?php
+    // thêm file footer
+    include "../header_footer/footer.php";
+    ?>
+
+</body>
+
+</html>
