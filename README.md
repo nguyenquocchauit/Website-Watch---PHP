@@ -26,7 +26,7 @@ Bài tập thiết kế Website bán đồng hồ!
     
 Video demo cách sử dụng Website giao diện khách hàng:
 
-Tài khoản đăng nhập Website: 
+Tài khoản đăng nhập Website:
 
   Email: nguyenkhanhnam.hn@gmail.com
   
