@@ -28,7 +28,7 @@ Video demo cách sử dụng Website giao diện khách hàng:
 
 Tài khoản đăng nhập Website:
 
-   Email: nguyenkhanhnam.hn@gmail.com
-  
-   Password: knam123
+    Email: nguyenkhanhnam.hn@gmail.com.
+    
+    Password: knam123.
 
