@@ -21,3 +21,7 @@ Bài tập thiết kế Website bán đồng hồ!
     Tìm hiểu sử dụng được công nghệ Ajax trao đổi dữ liệu từ các thành phần Web với PHP.
     
     Tìm hiểu được sử dụng thư viện JQuery xử lý giao diện và kết hợp xử lý dữ liệu thông qua phương thức Ajax.
+    
+Video demo cách sử dụng Website giao diện khách hàng:
+
+
